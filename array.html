@@ -1,0 +1,20 @@
+// Initialize an array
+let animals = ['cat', 'dog'];
+
+// Use push to add elements to the end of the array
+console.log("Before push:", animals); // Output: ['cat', 'dog']
+animals.push('rabbit');
+console.log("After push:", animals); // Output: ['cat', 'dog', 'rabbit']
+
+// Use unshift to add elements to the beginning of the array
+console.log("Before unshift:", animals); // Output: ['cat', 'dog', 'rabbit']
+animals.unshift('elephant');
+console.log("After unshift:", animals); // Output: ['elephant', 'cat', 'dog', 'rabbit']
+
+// Adding multiple elements with push
+animals.push('lion', 'tiger');
+console.log("After multiple push:", animals); // Output: ['elephant', 'cat', 'dog', 'rabbit', 'lion', 'tiger']
+
+// Adding multiple elements with unshift
+animals.unshift('giraffe', 'zebra');
+console.log("After multiple unshift:", animals); // Output: ['giraffe', 'zebra', 'elephant', 'cat', 'dog', 'rabbit', 'lion', 'tiger']

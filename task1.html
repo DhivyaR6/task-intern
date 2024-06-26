@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Calculator</title>
+</head>
+<body>
+    <h1>Basic Calculator</h1>
+    <div id="results"></div>
+
+    <script>
+        function calculate() {
+            let value1 = parseFloat(prompt("Enter the first value:"));
+            let value2 = parseFloat(prompt("Enter the second value:"));
+            let sum = value1 + value2;
+            let difference = value1 - value2;
+            let product = value1 * value2;
+            let quotient = value1 / value2;
+            let remainder = value1 % value2;
+            let power = Math.pow(value1, value2);
+            let resultsDiv = document.getElementById('results');
+            resultsDiv.innerHTML = `
+                <p>Sum: ${sum}</p>
+                <p>Difference: ${difference}</p>
+                <p>Product: ${product}</p>
+                <p>Quotient: ${quotient}</p>
+                <p>Remainder: ${remainder}</p>
+                <p>Power: ${power}</p>
+            `;
+        }
+        calculate();
+    </script>
+</body>
+</html>
